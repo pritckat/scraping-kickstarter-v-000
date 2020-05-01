@@ -7,6 +7,7 @@ def create_project_hash
 
   kickstarter = Nokogiri::HTML(open("https://store.tcgplayer.com/admin/orders/orderlist"))
   binding.pry
+  puts kickstarter
   # projects = {}
   #
   # kickstarter.css("li.project.grid_4").each do |project|
