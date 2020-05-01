@@ -5,7 +5,7 @@ require 'pry'
 def create_project_hash
   html = File.read('fixtures/kickstarter.html')
 
-  kickstarter = Nokogiri::HTML(open("https://store.tcgplayer.com/admin/orders/orderlist"))
+  kickstarter = Nokogiri::HTML("https://store.tcgplayer.com/admin/orders/orderlist")
   binding.pry
   # projects = {}
   #
